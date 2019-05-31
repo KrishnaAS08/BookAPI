@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/theming';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+
+
+@include mat-core();
+
+$primary: mat-palette($mat-indigo, 700, 300, 900);
+$accent:  mat-palette($mat-pink, 500, A200, A400);
+$warn:    mat-palette($mat-red, 500);
+
+$config: mat-typography-config();
+
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($theme);
+
+body {
+  font-family: mat-font-family($config);
+  font-weight: normal;
+  margin: 0;
+}
+
+
+
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    padding: 20px 80px;
+    background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tablecontainer {
+    width: 30%;
+    margin: 0 auto;
+    display: grid;
+    
+
+
+    
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em;
+}

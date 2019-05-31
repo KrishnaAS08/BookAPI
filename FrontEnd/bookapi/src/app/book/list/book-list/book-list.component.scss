@@ -1,0 +1,54 @@
+/* Structure */
+.container {
+  display: flex;
+  flex-direction: column;
+  width:70%; 
+  margin-left:15%; 
+  margin-right:10%;  
+  margin-bottom: 10%;
+  background: #eee url(https://www.toptal.com/designers/subtlepatterns/patterns/swirl_pattern.png);
+}
+
+.form {
+  min-height: 56px;
+  max-height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 8px 24px 0;
+  font-size: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid transparent;
+  
+}
+.mat-form-field {
+  font-size: 18px;
+  flex-grow: 1;
+  margin-top: 8px;
+  
+  
+}
+.mat-cell {
+  background: rgba(142, 199, 201, 0.199) ;
+  font-size: 15px;
+   
+}
+.mat-header-cell {
+  color: rgb(139, 74, 0);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.mat-cell:nth-child(1),
+.mat-header-cell:nth-child(1){
+  flex: 0 0 10%;;
+}
+
+.mat-cell:nth-child(2),
+.mat-header-cell:nth-child(2){
+  flex: 0 0 30%;
+}
+
+.mat-cell:nth-child(4),
+.mat-header-cell:nth-child(4){
+  flex: 0 0 20%;
+}
